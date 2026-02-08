@@ -1,9 +1,10 @@
 // @ts-ignore
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDaVfRWa0W0RL_SBIzktycBv0oMNGlOTKA",
+  apiKey: "AIzaSyDaVfRWa0W0RL_SBIzktycBv0oMNG1OTKA",
   authDomain: "fender-f52d4.firebaseapp.com",
   projectId: "fender-f52d4",
   storageBucket: "fender-f52d4.firebasestorage.app",
@@ -13,4 +14,5 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
 export const db = getFirestore(app);
